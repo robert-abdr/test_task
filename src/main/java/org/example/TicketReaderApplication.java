@@ -21,6 +21,7 @@ public class TicketReaderApplication {
             System.out.println("Invalid arguments, use: java TicketReaderApplication <path to json>.json");
             return;
         }
+
         ObjectMapper objectMapper = new ObjectMapper();
         SimpleModule module = new SimpleModule();
         module.addDeserializer(LocalTime.class, new LocalTimeDeserializer());
@@ -77,7 +78,6 @@ public class TicketReaderApplication {
                     System.out.printf("Company: %s, Flight time: %d. %n", k, v));
             System.out.println("============================");
             System.out.printf("Duration between median price and middle price: %.2f rubles", priceDuration);
-
 
         } catch (Exception e) {
             log.error("Something went wrong");

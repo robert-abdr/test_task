@@ -9,7 +9,6 @@ import java.time.LocalTime;
 import java.time.format.DateTimeParseException;
 
 public class LocalTimeDeserializer extends StdDeserializer<LocalTime> {
-
     public LocalTimeDeserializer() {
         super(LocalTime.class);
     }

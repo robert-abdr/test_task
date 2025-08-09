@@ -75,7 +75,7 @@ public class TicketReaderApplication {
 
             System.out.println("Minimal flight time VVO-TLV: ");
             minFlightTime.forEach((k, v) ->
-                    System.out.printf("Company: %s, Flight time: %d. %n", k, v));
+                    System.out.printf("Company: %s, Flight time: %d minutes. %n", k, v));
             System.out.println("============================");
             System.out.printf("Duration between median price and middle price: %.2f rubles", priceDuration);
 
